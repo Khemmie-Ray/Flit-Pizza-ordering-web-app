@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { FiSearch } from "react-icons/fi";
@@ -9,8 +9,9 @@ import { MdShoppingCart } from "react-icons/md";
 const Header = () => {
 
   return (
-    <header className="relative flex justify-between items-center p-4 w-[95%] mx-auto">
-      <div className="">
+    <header className="border-b border-[#e8e8e8] sticky top-0 z-30  bg-white p-4 w-[100%]">
+      <div className="w-[95%] mx-auto flex justify-between items-center">
+      <div>
         <Link href="/" className="flex sm:gap-5 gap-3">
           <Image src="https://res.cloudinary.com/ilove2support/image/upload/v1699863114/pizza-logo_afsvzn.png" width={50} height={50} alt="Pizzon Logo" className="w-auto h-auto" />
         </Link>
@@ -27,6 +28,7 @@ const Header = () => {
           <Link href="" className='text-blue-600 text-[1.8rem]'><MdShoppingCart /></Link>
           </div>
         </nav>
+        </div>
     </header>
   );
 };

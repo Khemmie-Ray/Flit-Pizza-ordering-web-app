@@ -8,7 +8,7 @@ type ExternalLayoutProps = {
 
 const ExternalLayout = ({ children }: ExternalLayoutProps) => {
   return (
-    <div className='flex flex-col h-[100vh]'>
+    <div>
       <Header />
       {children}
       <div className='mt-auto'>

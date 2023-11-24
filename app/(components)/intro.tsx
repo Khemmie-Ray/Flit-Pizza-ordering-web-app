@@ -6,24 +6,27 @@ const Intro = () => {
   return (
     <section >
         <div className='flex justify-between'>
-        <div>
-            <h1>Handmade, <br /> With an Extra Pinch of <span>Love</span></h1>
-            <p>Welcome to Pizzon, where each pizza is crafted with a meticulous touch and an extra pinch of love! Our commitment to excellence begins with the finest ingredients, thoughtfully selected to deliver a taste experience that goes beyond the ordinary</p>
-            <button><MdShoppingCart /> order now</button>
+        <div className='w-[100%] lg:w-[40%] p-4'>
+            <h1 className='text-[3.5rem] font-[600]'>Handmade, <br /> With an Extra Pinch of <span className='text-[#E80902]'>Love</span></h1>
+            <p className='mt-2'>Welcome to Pizzon, where each pizza is crafted with a meticulous touch and an extra pinch of love!</p>
+            <button className='bg-[#FFB200] flex items-center uppercase px-8 py-4 text-white rounded-full my-6'><MdShoppingCart className="mr-2 text-[1.2rem]" /> order now</button>
+
         </div>
-        <div>
-            <div className='w-[500px] h-[500px] bg-yellow-400 rounded-full'></div>
+        <div className='relative pt-24 lg:w-[50%] flex justify-end'>
+            <div className='w-[400px] h-[500px] bg-yellow-400 rounded-tl-full rounded-bl-full'></div>
             <Image 
             src="https://res.cloudinary.com/ilove2support/image/upload/v1696889286/uploads/bxoopgh1ixlhpdwfkz7m.png"
             alt=''
-            width={200}
-            height={200}
+            width={400}
+            height={400}
+            className='absolute top-0 left-20'
             />
               <Image 
             src="https://res.cloudinary.com/ilove2support/image/upload/v1697637066/uploads/whkayb8vpzhlsczydg3j.png"
             alt=''
-            width={200}
-            height={200}
+            width={150}
+            height={150}
+            className='absolute bottom-0 right-48'
             />
         </div>
         </div>
