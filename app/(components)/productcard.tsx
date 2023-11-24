@@ -48,7 +48,6 @@ const Productcard = () => {
   
   
     const addTocart = (product: Product) => {
-      // Check if the product is already in the cart
       if (!cart.find((item) => item.id === product.id)) {
         setCart([...cart, product]);
         console.log('Product added to cart:', product);
@@ -58,10 +57,7 @@ const Productcard = () => {
     };
 
   return (
-    <section className='py-12'>
-      <div className='w-[95%] mx-auto'>
-       <p className='uppercase text-[#C2414B] font-bold'>Popular Dishes</p>
-        <h2 className='text-[3rem] font-bold capitalize'>Browse our Menu</h2>
+    <section className='pb-12 w-[95%] mx-auto'>
         <div className='flex flex-col lg:flex-row justify-between mt-12 flex-wrap'>
         { products.map((product) => (<div className='lg:w-[32%] w-[100%] mb-8 shadow-md shadow-gray-500 rounded-lg p-4' key={product.id}>
                  <Image 
@@ -76,7 +72,6 @@ const Productcard = () => {
                  <p className='text-[14px] my-4'>{product.description}</p>
                  <button className='bg-[#FFB200] flex items-center uppercase px-8 py-4 text-white rounded-full mb-6' onClick={() => addTocart(product)}><MdShoppingCart className="mr-2 text-[1.2rem]" /> order now</button>
              </div> ))};  
-             </div>
              </div>
     </section>
   )

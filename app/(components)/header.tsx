@@ -18,8 +18,8 @@ const Header = () => {
         </div>
         <Image src="https://res.cloudinary.com/ilove2support/image/upload/v1699863113/pizza-header-img_krzjsl.png" alt='' width={200} height={200} className='w-auto h-auto '/>
         <nav className=" flex w-[45%] justify-between uppercase font-bold items-center">
-          <Link href="">Home</Link>
-          <Link href="">Product</Link>
+          <Link href="/">Home</Link>
+          <Link href="/product">Product</Link>
           <Link href="">pages</Link>
           <Link href="">blog</Link>
           <Link href="">contact</Link>
