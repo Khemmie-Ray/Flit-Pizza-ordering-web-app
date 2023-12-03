@@ -43,7 +43,7 @@ const Productcard = () => {
   return (
     <section className='pb-12 w-[95%] mx-auto'>
         <div className='flex flex-col lg:flex-row justify-between mt-12 flex-wrap'>
-        { productData.map((product) => (<Link href={`/product/${product._id}`} className='lg:w-[32%] w-[100%] mb-8 shadow-md shadow-gray-500 rounded-lg p-4' key={product._id}>
+        { productData.map((product) => (<Link href={`/product/${product._id}`} className='lg:w-[32%] w-[90%] mx-auto mb-8 shadow-md shadow-gray-500 rounded-lg p-4' key={product._id}>
                  <Image 
                      src={product.img}
                      alt=''

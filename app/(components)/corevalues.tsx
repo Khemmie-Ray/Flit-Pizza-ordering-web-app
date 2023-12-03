@@ -10,12 +10,12 @@ const Corevalues = () => {
         alt=''
         width={400}
         height={400}
-        className='absolute top-0 right-0'
+        className='absolute lg:top-0 right-0 top-36 w-[200px] h-[200px] lg:w-[400px] lg:h-[400px]'
        />
        <p className='uppercase text-[#C2414B] font-bold'>Our Strength</p>
-        <h2 className='text-[3rem] font-bold capitalize'>Why we are the best?</h2>
+        <h2 className='lg:text-[3rem] text-[2.5rem] font-bold capitalize'>Why we are the best?</h2>
         <div className='flex flex-col lg:flex-row justify-between mt-12'>
-        <div className='lg:w-[23%] w-[100%]'>
+        <div className='lg:w-[23%] w-[100%] my-6 lg:mb-0'>
                  <Image 
                      src="https://res.cloudinary.com/ilove2support/image/upload/v1700498567/all-kinds-of-foods_vwpaqa.png"
                      alt=''
@@ -37,7 +37,7 @@ const Corevalues = () => {
                  <h4 className='font-semibold text-[1.3rem] my-4'>All Kind of Food</h4>
                  <p className='text-[14px] '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem consequuntur non assumenda, excepturi nam quae.</p>
              </div>
-             <div className='lg:w-[23%] w-[100%]'>
+             <div className='lg:w-[23%] w-[100%] my-6'>
                  <Image 
                      src="https://res.cloudinary.com/ilove2support/image/upload/v1700498567/best-taste_f5hidn.png"
                      alt=''

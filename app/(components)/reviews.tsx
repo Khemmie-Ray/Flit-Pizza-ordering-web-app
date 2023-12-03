@@ -20,10 +20,10 @@ const Reviews = (props : reviewProps) => {
             className='absolute top-0 left-0'
          />
         <p className='uppercase text-[#C2414B] font-bold'>Customer's Feedback</p>
-        <h2 className='text-[3rem] font-bold'>Clients' Testimonials</h2>
+        <h2 className='lg:text-[3rem] text-[2.5rem] font-bold'>Clients' Testimonials</h2>
         <div className='flex flex-col lg:flex-row justify-between mt-24 mb-16 w-[95%] mx-auto'>
             {props.review?.map(info => (
-                 <div className='lg:w-[22%] w-[100%] flex flex-col items-center text-center shadow-sm shadow-gray-600 p-6 rounded-lg'>
+                 <div className='lg:w-[22%] w-[90%] flex flex-col items-center text-center shadow-sm shadow-gray-600 p-6 rounded-lg mb-6 lg:mb-0 mx-auto'>
                  <Image 
                      src={info.imageUrl}
                      alt=''
