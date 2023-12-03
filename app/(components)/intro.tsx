@@ -12,7 +12,7 @@ const Intro = () => {
             <button className='bg-[#FFB200] flex items-center uppercase px-8 py-4 text-white rounded-full my-6'><MdShoppingCart className="mr-2 text-[1.2rem]" /> order now</button>
 
         </div>
-        <div className='relative lg:w-[50%] flex justify-end'>
+        <div className='relative lg:w-[50%] w-[100%] flex justify-end'>
             <div className='w-[400px] h-[700px] bg-yellow-400 rounded-tl-full rounded-bl-full'></div>
             <Image 
             src="https://res.cloudinary.com/ilove2support/image/upload/v1696889286/uploads/bxoopgh1ixlhpdwfkz7m.png"
