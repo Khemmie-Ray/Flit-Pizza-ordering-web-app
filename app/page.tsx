@@ -2,7 +2,7 @@ import ExternalLayout from './(components)/External-Layout'
 import Intro from './(components)/intro'
 import Reviews from './(components)/reviews'
 import Corevalues from './(components)/corevalues'
-import Productcard from './(components)/productcard'
+import Productcard from './product/(components)/productcard'
 
 export default function Home() {
   const review = [

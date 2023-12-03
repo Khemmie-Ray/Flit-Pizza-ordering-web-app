@@ -1,6 +1,6 @@
 import React from 'react'
 import ExternalLayout from '../(components)/External-Layout'
-import Productcard from '../(components)/productcard'
+import Productcard from './(components)/productcard'
 
 const Product = () => {
   return (

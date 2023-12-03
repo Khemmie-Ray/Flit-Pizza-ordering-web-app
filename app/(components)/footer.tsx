@@ -8,7 +8,7 @@ import { AiFillInstagram } from "react-icons/ai";
 const Footer = () => {
   return (
    <footer className='bg-[#FFFBED] px-4 py-[4em]'>
-    <div className='flex justify-between bg-[#FFFBED] w-[95%] mx-auto'>
+    <div className='flex flex-col lg:flex-row justify-between bg-[#FFFBED] w-[95%] mx-auto'>
     <div className='flex flex-col'>
       <h2 className='font-bold uppercase mb-6'>Information</h2>
       <Link href="" className='mb-4 text-[14px]'>Home</Link>
@@ -17,7 +17,7 @@ const Footer = () => {
       <Link href="" className='mb-4 text-[14px]'>Menu</Link>
       <Link href="" className='text-[14px]'>Contact Us</Link>
     </div>
-    <div className='flex flex-col'>
+    <div className='flex flex-col mt-6 lg:mt-0'>
       <h2 className='font-bold uppercase mb-6'>Top Items</h2>
       <Link href="" className='mb-4 text-[14px]'>Pepperoni</Link>
       <Link href="" className='mb-4 text-[14px]' >Swiss Mushroom</Link>
@@ -25,7 +25,7 @@ const Footer = () => {
       <Link href="" className='mb-4 text-[14px]'>Vegetarian</Link>
       <Link href="" className='text-[14px]'>Ham & Cheese</Link>
     </div>
-    <div className='flex flex-col'>
+    <div className='flex flex-col mt-6 lg:mt-0'>
       <h2 className='font-bold uppercase mb-6'>Others</h2>
       <Link href="" className='mb-4 text-[14px]'>Checkout</Link>
       <Link href="" className='mb-4 text-[14px]'>Cart</Link>
@@ -33,7 +33,7 @@ const Footer = () => {
       <Link href="" className='mb-4 text-[14px]'>Location</Link>
       <Link href="" className='text-[14px]'>Legal</Link>
     </div>
-    <div className='flex flex-col'>
+    <div className='flex flex-col mt-6 lg:mt-0'>
       <h2 className='font-bold uppercase mb-6'>social media</h2>
      <div className='flex text-[3rem]'>
       <Link href="" className='text-blue-800 mr-4'><FaFacebookSquare/></Link>
