@@ -32,7 +32,7 @@ const Header = () => {
           <Link href="">contact</Link>
           <div className='flex items-center'>
           <Link href="" className='text-[1.4rem] mr-2'><FiSearch /></Link>
-          <Link href="" className='text-blue-600 text-[1.8rem]'><MdShoppingCart /></Link>
+          <Link href="/cart" className='text-blue-600 text-[1.8rem]'><MdShoppingCart /></Link>
           </div>
         </nav>
         </div>
