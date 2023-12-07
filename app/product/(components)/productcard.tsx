@@ -21,20 +21,21 @@ const Productcard = () => {
     useEffect(() => {
       const getData = async () => {
         const query = await fetch('https://pizza-ordering-anno.onrender.com/api/products', {
-          cache: 'force-cache'
+          cache: 'force-cache',
         })
         const res = await query.json();
-        // setProductData(res)
-        // console.log(typeof(res))
-        if (Array.isArray(res)) {
-          setProductData(res);
+        if (typeof res === 'object') {
+          const productsArray = Object.values(res) as Product[];
+          setProductData(productsArray);
+          console.log(productsArray);
         } else {
-          console.error('Data from the API does not contain an array of products:', res);
+          console.error('Data from the API is not an object:', res);
         }
       } 
 
       getData();
     }, [])
+   
     // console.log(typeof(productData))
 
    
