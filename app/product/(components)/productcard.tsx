@@ -24,12 +24,19 @@ const Productcard = () => {
           cache: 'force-cache'
         })
         const res = await query.json();
-        setProductData(res)
-        // console.log(res)
-      }
+        // setProductData(res)
+        // console.log(typeof(res))
+        if (Array.isArray(res)) {
+          setProductData(res);
+        } else {
+          console.error('Data from the API does not contain an array of products:', res);
+        }
+      } 
 
       getData();
     }, [])
+    // console.log(typeof(productData))
+
    
     const addTocart = (product: Product) => {
       if (!cart.find((item) => item._id === product._id)) {

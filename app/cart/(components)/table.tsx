@@ -43,7 +43,7 @@ const Table = () => {
                 alt=''
                 width={150}
                 height={60}
-                className='mx-auto  w-[150px] h-[60px]'
+                className='mx-auto'
                  />
             </button>
           </div>
