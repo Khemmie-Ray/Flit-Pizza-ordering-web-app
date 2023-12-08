@@ -21,7 +21,7 @@ const Productcard = () => {
     useEffect(() => {
       const getData = async () => {
         const query = await fetch('https://pizza-ordering-anno.onrender.com/api/products', {
-          cache: 'force-cache',
+          // cache: 'force-cache',
         })
         const res = await query.json();
         if (typeof res === 'object') {
@@ -35,9 +35,6 @@ const Productcard = () => {
 
       getData();
     }, [])
-   
-    // console.log(typeof(productData))
-
    
     const addTocart = (product: Product) => {
       if (!cart.find((item) => item._id === product._id)) {
