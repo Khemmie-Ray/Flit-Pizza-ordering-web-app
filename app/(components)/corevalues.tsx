@@ -8,9 +8,9 @@ const Corevalues = () => {
       <Image 
         src="https://res.cloudinary.com/ilove2support/image/upload/v1700498568/pizza-strength-vacter_oeljrn.png"
         alt=''
-        width={400}
-        height={400}
-        className='absolute lg:top-0 right-0 top-36 w-[200px] h-[200px] lg:w-[400px] lg:h-[400px]'
+        width={300}
+        height={300}
+        className='absolute lg:top-0 right-0 top-36'
        />
        <p className='uppercase text-[#C2414B] font-bold'>Our Strength</p>
         <h2 className='lg:text-[3rem] text-[2.5rem] font-bold capitalize'>Why we are the best?</h2>

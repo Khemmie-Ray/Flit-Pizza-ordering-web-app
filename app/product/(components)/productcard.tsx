@@ -15,19 +15,15 @@ interface Product {
 }
 
 const Productcard = () => {
-    const [cart, setCart] = useState<Product[]>([]);
     const [productData, setProductData] = useState<Product[]>([]);
 
     useEffect(() => {
       const getData = async () => {
-        const query = await fetch('https://pizza-ordering-anno.onrender.com/api/products', {
-          // cache: 'force-cache',
-        })
+        const query = await fetch('https://pizza-ordering-anno.onrender.com/api/products')
         const res = await query.json();
         if (typeof res === 'object') {
           const productsArray = Object.values(res) as Product[];
           setProductData(productsArray);
-          console.log(productsArray);
         } else {
           console.error('Data from the API is not an object:', res);
         }
@@ -35,15 +31,6 @@ const Productcard = () => {
 
       getData();
     }, [])
-   
-    const addTocart = (product: Product) => {
-      if (!cart.find((item) => item._id === product._id)) {
-        setCart([...cart, product]);
-        console.log('Product added to cart:', product);
-      } else {
-        console.log('Product is already in the cart:', product);
-      }
-    };
 
   return (
     <section className='pb-12 w-[95%] mx-auto'>
@@ -59,7 +46,7 @@ const Productcard = () => {
                  <h4 className='font-semibold text-[1.3rem] my-4 flex justify-between w-[70%] mb-2'>{product.title} <span className='text-[#E80902]'>${product.prices[0]}</span></h4>
                  <div className='flex text-[#FFB200]'><IoStarSharp /><IoStarSharp /><IoStarSharp /><IoStarSharp /><IoStarSharp /></div>
                  <p className='text-[14px] my-4'>{product.desc}</p>
-                 <button className='bg-[#FFB200] flex items-center uppercase px-8 py-4 text-white rounded-full mb-6' onClick={() => addTocart(product)}><MdShoppingCart className="mr-2 text-[1.2rem]" /> order now</button>
+                 <button className='bg-[#FFB200] flex items-center uppercase px-8 py-4 text-white rounded-full mb-6'><MdShoppingCart className="mr-2 text-[1.2rem]" /> order now</button>
              </Link> ))};  
              </div>
     </section>
