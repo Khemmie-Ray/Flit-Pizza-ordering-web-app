@@ -1,7 +1,11 @@
 import React from 'react'
 
-const Modalform = ({ totalprices }) => {
-   
+interface ModalFormProps {
+  totalprices: number | string;
+}
+
+const Modalform = ({ totalprices }: ModalFormProps) => {
+
   return (
     <form action="" className='w-[40%] bg-white rounded-lg p-6'>
         <h3 className='my-2 font-bold text-[1.2rem]'>You will pay ${totalprices} on delivery.</h3> 
