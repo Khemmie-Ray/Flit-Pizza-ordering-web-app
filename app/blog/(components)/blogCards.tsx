@@ -47,8 +47,8 @@ const BlogCards = () => {
         },
     ]
     
-    const CardBlog = blog.map((info) => (<Link href={`blog/${info.id}`} key={info.id}>
-        <div className='flex justify-between w-[90%] mx-auto mb-8 lg:flex-row md:flex-row flex-col'>
+    const CardBlog = blog.map((info) => (<Link href={`blog/${info.id}`}>
+        <div className='flex justify-between w-[90%] mx-auto mb-8 lg:flex-row md:flex-row flex-col' key={info.id}>
             <div className='bg-cover bg-center h-[30vh]  w-[50%] relative' style={{ backgroundImage: `url(${info.img})` }}>
             <p className='absolute top-4 left-4 font-[700] text-[1.5rem] bg-[rgba(0,0,0,0.8)] p-2 rounded-full px-6 text-white'>{info.date}</p>
             </div>
