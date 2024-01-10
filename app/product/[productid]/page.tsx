@@ -11,7 +11,7 @@ interface detailsProps{
         title: string;
         prices: string;
         img: string;
-        extraOptions: string[];
+        extraOptions: any[];
 }
 
 const ProductDetails = ({params} : {params: {productid : string}}) => {
@@ -30,6 +30,7 @@ const ProductDetails = ({params} : {params: {productid : string}}) => {
   
         getData();
       }, [params.productid])
+      console.log(details)
 
       const addToCart = () => {
         const existingCartItems = JSON.parse(localStorage.getItem('cartItems') || '[]');
