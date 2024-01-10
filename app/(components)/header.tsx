@@ -27,12 +27,11 @@ const Header = () => {
         <nav className=" flex w-[45%] justify-between uppercase font-bold items-center">
           <Link href="/">Home</Link>
           <Link href="/product">Product</Link>
-          <Link href="#">pages</Link>
-          <Link href="#">blog</Link>
+          <Link href="/blog">blog</Link>
           <Link href="#">contact</Link>
           <div className='flex items-center'>
           <Link href="" className='text-[1.4rem] mr-2'><FiSearch /></Link>
-          <Link href="/cart" className='text-blue-600 text-[1.8rem]'><MdShoppingCart /></Link>
+          <Link href="/cart" className='text-blue-600 relative'><MdShoppingCart className="text-[1.8rem]" /> <p className='absolute top-[-5px] right-[-12px] bg-[rgb(232,9,2)] px-2 text-white rounded-full'>0</p></Link>
           </div>
         </nav>
         </div>
@@ -50,7 +49,7 @@ const Header = () => {
               <nav className="absolute flex flex-col w-[100%] uppercase font-bold items-center top-36 bg-white p-4">
                 <Link href="/" className='mb-4'>Home</Link>
                 <Link href="/product" className='mb-4'>Product</Link>
-                <Link href="#" className='mb-4'>blog</Link>
+                <Link href="/blog" className='mb-4'>blog</Link>
                 <Link href="#" className='mb-4'>contact</Link>
                 <div className='flex items-center'>
                 <Link href="" className='text-[1.4rem] mr-2'><FiSearch /></Link>
