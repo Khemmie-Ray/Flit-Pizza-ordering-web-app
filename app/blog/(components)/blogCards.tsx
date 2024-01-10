@@ -12,11 +12,6 @@ const BlogCards = () => {
         img: string;
     }
 
-    const extract = (text: string) => {
-        const words = text.split(' ');
-        return words.slice(0, 20).join(' ');
-    };
-
     const blog:Blog[] = [
         {
             id: 1,
@@ -54,7 +49,7 @@ const BlogCards = () => {
             </div>
             <div className='w-[45%] self-center'>
                 <h3 className='font-[700] lg:text-[1.8rem] text-[1.4rem]'>{info.title}</h3>
-                <p className='my-4'>{extract(info.intro)}...</p>
+                <p className='my-4'>{info.intro}...</p>
                 <a href="#" className='uppercase font-[700]'>continue reading &rarr;</a>
             </div>
         </div>

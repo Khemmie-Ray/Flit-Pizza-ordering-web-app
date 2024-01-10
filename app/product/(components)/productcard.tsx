@@ -17,6 +17,16 @@ interface Product {
 const Productcard = () => {
     const [productData, setProductData] = useState<Product[]>([]);
 
+    const productFallback:Product[] = [
+      {
+          _id: "1",
+          desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, a?",
+          title: "chicken pizza",
+          prices: "$4",
+          img: "https://res.cloudinary.com/ilove2support/image/upload/v1696768880/uploads/bxnbmb4etcl5i4vgre4s.jpg"
+      }
+    ]
+
     useEffect(() => {
       const getData = async () => {
         const query = await fetch('https://pizza-ordering-anno.onrender.com/api/products')
@@ -25,12 +35,14 @@ const Productcard = () => {
           const productsArray = Object.values(res) as Product[];
           setProductData(productsArray);
         } else {
-          console.error('Data from the API is not an object:', res);
+          setProductData(productFallback)
         }
       } 
 
       getData();
     }, [])
+
+console.log(productData)
 
   return (
     <section className='pb-12 w-[95%] mx-auto'>
@@ -47,7 +59,7 @@ const Productcard = () => {
                  <div className='flex text-[#FFB200]'><IoStarSharp /><IoStarSharp /><IoStarSharp /><IoStarSharp /><IoStarSharp /></div>
                  <p className='text-[14px] my-4'>{product.desc}</p>
                  <button className='bg-[#FFB200] flex items-center uppercase px-8 py-4 text-white rounded-full mb-6'><MdShoppingCart className="mr-2 text-[1.2rem]" /> order now</button>
-             </Link> ))};  
+             </Link> ))} 
              </div>
     </section>
   )

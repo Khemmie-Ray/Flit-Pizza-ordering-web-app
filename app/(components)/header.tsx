@@ -28,7 +28,7 @@ const Header = () => {
           <Link href="/">Home</Link>
           <Link href="/product">Product</Link>
           <Link href="/blog">blog</Link>
-          <Link href="#">contact</Link>
+          <Link href="/contact">contact</Link>
           <div className='flex items-center'>
           <Link href="" className='text-[1.4rem] mr-2'><FiSearch /></Link>
           <Link href="/cart" className='text-blue-600 relative'><MdShoppingCart className="text-[1.8rem]" /> <p className='absolute top-[-5px] right-[-12px] bg-[rgb(232,9,2)] px-2 text-white rounded-full'>0</p></Link>
@@ -50,7 +50,7 @@ const Header = () => {
                 <Link href="/" className='mb-4'>Home</Link>
                 <Link href="/product" className='mb-4'>Product</Link>
                 <Link href="/blog" className='mb-4'>blog</Link>
-                <Link href="#" className='mb-4'>contact</Link>
+                <Link href="/contact" className='mb-4'>contact</Link>
                 <div className='flex items-center'>
                 <Link href="" className='text-[1.4rem] mr-2'><FiSearch /></Link>
                 </div>

@@ -47,7 +47,7 @@ const BlogDetails = ({params} : {params: {blogid : string}}) => {
     const details:any = blog.find(item => item.id === parseInt(params.blogid, 10))
 
   return (
-    <div>
+    <div className='max-w-[1440px] mx-auto'>
         <ExternalLayout>
     <div className='w-[60%] mx-auto my-8' >
     <p className='font-[700] text-[1.5rem] bg-[rgba(0,0,0,0.8)] p-2 rounded-full px-6 text-white mb-8'> {details.date}</p>

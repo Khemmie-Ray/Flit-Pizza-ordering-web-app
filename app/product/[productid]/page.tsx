@@ -24,13 +24,11 @@ const ProductDetails = ({params} : {params: {productid : string}}) => {
             cache: 'force-cache'
           })
           const res = await query.json();
-          console.log(res)
           setDetails(res)
         }
   
         getData();
       }, [params.productid])
-      console.log(details)
 
       const addToCart = () => {
         const existingCartItems = JSON.parse(localStorage.getItem('cartItems') || '[]');
