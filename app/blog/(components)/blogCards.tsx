@@ -44,10 +44,10 @@ const BlogCards = () => {
     
     const CardBlog = blog.map((info, index) => (<Link href={`blog/${info.id}`} key={index}>
         <div className='flex justify-between w-[90%] mx-auto mb-8 lg:flex-row md:flex-row flex-col'>
-            <div className='bg-cover bg-center h-[30vh]  w-[50%] relative' style={{ backgroundImage: `url(${info.img})` }}>
+            <div className='bg-cover bg-center h-[30vh] lg:w-[50%] md:w-[50%] w-[100%] relative mb-4' style={{ backgroundImage: `url(${info.img})` }}>
             <p className='absolute top-4 left-4 font-[700] text-[1.5rem] bg-[rgba(0,0,0,0.8)] p-2 rounded-full px-6 text-white'>{info.date}</p>
             </div>
-            <div className='w-[45%] self-center'>
+            <div className='lg:w-[45%] md:w-[45%] w-[100%] self-center'>
                 <h3 className='font-[700] lg:text-[1.8rem] text-[1.4rem]'>{info.title}</h3>
                 <p className='my-4'>{info.intro}...</p>
                 <a href="#" className='uppercase font-[700]'>continue reading &rarr;</a>

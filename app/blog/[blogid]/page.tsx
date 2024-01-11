@@ -49,7 +49,7 @@ const BlogDetails = ({params} : {params: {blogid : string}}) => {
   return (
     <div className='max-w-[1440px] mx-auto'>
         <ExternalLayout>
-    <div className='w-[60%] mx-auto my-8' >
+    <div className='lg:w-[60%] md:w-[60%] w-[100%] mx-auto my-8 p-6' >
     <p className='font-[700] text-[1.5rem] bg-[rgba(0,0,0,0.8)] p-2 rounded-full px-6 text-white mb-8'> {details.date}</p>
     <div>
     <Image 
@@ -57,10 +57,10 @@ const BlogDetails = ({params} : {params: {blogid : string}}) => {
         alt=''
         width={250}
         height={250}
-        className='float-left m-[10px]'
+        className='lg:float-left md:float-left lg:m-[10px] md:m-[10px] mb-6'
     />
     </div>
-    <div className='text-justify'>
+    <div className='lg:text-justify md:text-justify'>
         <h3 className='font-[700] lg:text-[1.8rem] text-[1.4rem]'>{details.title}</h3>
         <p className='my-4 leading-8'>{details.intro}</p>
         <p className='my-4 leading-8'>{details.main}</p>
